@@ -1,0 +1,61 @@
+{
+    "services": [
+      {
+        "id": 1,
+        "title": "Web Development",
+        "slug": "web-development",
+        "description": "Build robust and scalable websites with our professional web development services.",
+        "isFeatured": true,
+        "image": "/services/webdev.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Mobile App Development",
+        "slug": "mobile-app-development",
+        "description": "Create innovative and user-friendly mobile applications for iOS and Android platforms.",
+        "isFeatured": true,
+        "image": "/services/mobiledev.png"
+      },
+      {
+        "id": 3,
+        "title": "UI/UX Design",
+        "slug": "ui-ux-design",
+        "description": "Enhance user experience with our creative and intuitive UI/UX design services.",
+        "isFeatured": true,
+        "image": "/services/UIux.png"
+      },
+      {
+        "id": 4,
+        "title": "Digital Marketing",
+        "slug": "digital-marketing",
+        "description": "Boost your online presence and reach your target audience with our comprehensive digital marketing services.",
+        "isFeatured": true,
+        "image": "/services/marketing.png"
+      },
+      {
+        "id": 5,
+        "title": "Custome Software development",
+        "slug": "custome-software-development",
+        "description": "Transform your business operations with our custom software development, designed to meet your unique needs and optimize efficiency. Achieve your goals with tailored solutions that drive success and innovation.",
+        "isFeatured": true,
+        "image": "/services/marketing.png"
+      },
+      {
+        "id": 6,
+        "title": "Graphics Designing",
+        "slug": "graphics-designing",
+        "description": "Enhance your brand's visual appeal with our expert graphic design services. Our creative team crafts stunning visuals that capture attention and communicate your message effectively.",
+        "isFeatured": true,
+        "image": "/services/marketing.png"
+      },
+      {
+        "id": 7,
+        "title": "SEO",
+        "slug": "seo",
+        "description": "Improve your website's visibility and drive organic traffic with our expert SEO services. We employ proven strategies to boost your search engine rankings and connect you with your target audience.",
+        "isFeatured": true,
+        "image": "/services/marketing.png"
+      }
+    ]
+  }
+  
