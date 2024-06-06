@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useCallback } from 'react';
 import Image from 'next/image';
 
 const Carousel: React.FC = () => {
@@ -8,48 +8,48 @@ const Carousel: React.FC = () => {
     const itemsRef = useRef<HTMLDivElement[]>([]);
     const indicatorsRef = useRef<HTMLButtonElement[]>([]);
 
-    const updateCarousel = (index: number) => {
+    const updateCarousel = useCallback((index: number) => {
         itemsRef.current.forEach((item, i) => {
             item.classList.toggle('hidden', i !== index);
         });
         indicatorsRef.current.forEach((indicator, i) => {
             indicator.setAttribute('aria-current', i === index ? 'true' : 'false');
         });
-    };
+    }, []);
 
-    const nextSlide = () => {
+    const nextSlide = useCallback(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % itemsRef.current.length);
-    };
+    }, []);
 
-    const prevSlide = () => {
+    const prevSlide = useCallback(() => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + itemsRef.current.length) % itemsRef.current.length);
-    };
+    }, []);
 
-    const startAutoMove = () => {
+    const startAutoMove = useCallback(() => {
         autoMoveIntervalRef.current = setInterval(nextSlide, 2000);
-    };
+    }, [nextSlide]);
 
-    const stopAutoMove = () => {
+    const stopAutoMove = useCallback(() => {
         if (autoMoveIntervalRef.current) {
             clearInterval(autoMoveIntervalRef.current);
         }
-    };
+    }, []);
 
     useEffect(() => {
         updateCarousel(currentIndex);
-    }, [currentIndex]);
+    }, [currentIndex, updateCarousel]);
 
     useEffect(() => {
         startAutoMove();
         return () => {
             stopAutoMove();
         };
-    }, []);
+    }, [startAutoMove, stopAutoMove]);
 
     return (
         <div id="default-carousel" className="relative w-full" data-carousel="slide">
-            <div className="mt-10">
-                <h2 className="text-center mt-10 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+            <div className="mt-8">
+                <h2 className="text-center mt-6 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
                     Projects
                 </h2>
             </div>
@@ -68,8 +68,8 @@ const Carousel: React.FC = () => {
                     >
                         <Image
                             src={src}
-                            layout="fill"
-                            objectFit="cover"
+                            width={800}
+                            height={800}
                             className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt={`Slide ${index + 1}`}
                         />

@@ -9,7 +9,7 @@ function Footer() {
             <div>
 
             {/* <img src="/services/logo.jpg" alt="" /> */}
-            <Image src={"/services/logo.jpg"} alt={"logo"}>
+            <Image src={"/services/logo.jpg"} alt={"logo"} width={100} height={100}>
                
             </Image>
             </div>
