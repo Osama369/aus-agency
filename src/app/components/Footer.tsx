@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image"
 function Footer() {
     return (
       <footer className="bg-black text-gray-400 py-12">
@@ -7,7 +8,10 @@ function Footer() {
             <h2 className="text-white text-lg font-semibold mb-4">About Us</h2>
             <div>
 
-            <img src="/services/logo.jpg" alt="" />
+            {/* <img src="/services/logo.jpg" alt="" /> */}
+            <Image src={"/services/logo.jpg"} alt={"logo"}>
+               
+            </Image>
             </div>
           </div>
           <div>
