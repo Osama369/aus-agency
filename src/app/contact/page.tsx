@@ -1,7 +1,8 @@
 'use client';
 
+import { BackgroundBeams } from '@/components/ui/background-beams';
 import React, { FormEvent, useState } from 'react';
-import { BackgroundBeams } from '@/app/components/ui/background-beams';
+
 
 function ContactUs() {
   const [email, setEmail] = useState('');

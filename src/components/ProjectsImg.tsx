@@ -47,9 +47,9 @@ const Carousel: React.FC = () => {
     }, [startAutoMove, stopAutoMove]);
 
     return (
-        <div id="default-carousel" className="relative w-full" data-carousel="slide">
-            <div className="mt-8">
-                <h2 className="text-center mt-6 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+        <div id="default-carousel" className="relative w-full mt-8  bg-gray-900" data-carousel="slide">
+            <div  className='text-center'>
+                <h2 className=" uppercase p-6 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
                     Projects
                 </h2>
             </div>

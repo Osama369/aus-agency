@@ -1,9 +1,9 @@
+import HeroSection from "@/components/Herosection";
+import Services from "@/components/Services";
 
-import HeroSection from "./components/Herosection";
-import Services from "./components/Services";
-import ProjectSlider from './components/ProjectsImg'
-import Team from "./components/Team";
-import Footer from "./components/Footer";
+import ProjectSlider from '@/components/ProjectsImg'
+import Team from "@/components/Team";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <Services/>
         <ProjectSlider/>
        <Team/>
-       <Footer/>
+       
       </main>
   );
 }

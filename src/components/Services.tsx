@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import serviceData from "@/app/data/Services.json";
+import serviceData from "@/data/services.json";
 import { BackgroundGradient } from './ui/background-gradient';
 import Link from 'next/link';
 interface Service{
