@@ -38,7 +38,7 @@
         "slug": "custome-software-development",
         "description": "Transform your business operations with our custom software development, designed to meet your unique needs and optimize efficiency. Achieve your goals with tailored solutions that drive success and innovation.",
         "isFeatured": true,
-        "image": "/services/marketing.png"
+        "image": "/services/csd.jpg"
       },
       {
         "id": 6,
@@ -46,7 +46,7 @@
         "slug": "graphics-designing",
         "description": "Enhance your brand's visual appeal with our expert graphic design services. Our creative team crafts stunning visuals that capture attention and communicate your message effectively.",
         "isFeatured": true,
-        "image": "/services/marketing.png"
+        "image": "/services/graphics.jpg"
       },
       {
         "id": 7,
@@ -54,7 +54,7 @@
         "slug": "seo",
         "description": "Improve your website's visibility and drive organic traffic with our expert SEO services. We employ proven strategies to boost your search engine rankings and connect you with your target audience.",
         "isFeatured": true,
-        "image": "/services/marketing.png"
+        "image": "/services/seo.png"
       }
     ]
   }
