@@ -1,9 +1,8 @@
 import HeroSection from "@/components/Herosection";
 import Services from "@/components/Services";
-
 import ProjectSlider from '@/components/ProjectsImg'
 import Team from "@/components/Team";
-import Footer from "@/components/Footer";
+
 
 export default function Home() {
   return (
